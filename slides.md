@@ -14,8 +14,8 @@ mdc: true
 layout: center
 ---
 
-<img src="./public/avatar.jpeg" class="mx-auto h-40 rounded"/>
-杨森--Mori
+<img src="./public/assets/avatar.jpeg" class="mx-auto h-40 rounded"/>
+Mori
 
 ---
 src: "./pages/关于XXX的汇报/index.md"
