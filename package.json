@@ -1,0 +1,19 @@
+{
+  "name": "mori-slide-collection",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --force",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.6.0",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-neversink": "^0.3.6",
+    "vue": "^3.5.13"
+  },
+  "packageManager": "pnpm@10.10.0"
+}
