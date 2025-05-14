@@ -18,6 +18,7 @@ layout: center
 Mori
 
 ---
-src: "./pages/关于XXX的汇报/index.md"
+src: "./pages/slide-template/index.md"
 info: "作为统一入口，修改链接来展示不同的PPT。"
+style: "height:100%"
 ---
