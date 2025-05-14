@@ -1,6 +1,14 @@
 <template>
     <div class="list-container" :style="style">
-        <div v-for="(value, key) in items" :key="key" v-click class="list-item-container">
+        <div 
+            v-motion
+            v-for="(value, key) 
+            in items" :key="key" 
+            v-click 
+            class="list-item-container"
+            :initial="{ x: -80 }"
+            :[`click-${key+1}`]="{ x : 0 }"
+        >
             <span class="list-item-number">{{ key + 1 }}</span> <span class="list-item-text">{{ value }}</span>
         </div>
     </div>
