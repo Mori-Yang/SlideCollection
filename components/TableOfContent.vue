@@ -1,6 +1,6 @@
 <template>
-    <div class="list-container" :style="style">
-        <div 
+    <ol class="list-container" :style="style">
+        <li 
             v-motion
             v-for="(value, key) 
             in items" :key="key" 
@@ -9,9 +9,9 @@
             :initial="{ x: -80 }"
             :[`click-${key+1}`]="{ x : 0 }"
         >
-            <span class="list-item-number">{{ key + 1 }}</span> <span class="list-item-text">{{ value }}</span>
-        </div>
-    </div>
+            <span class="list-item-number">{{ key + 1 }}.</span><span class="list-item-text">{{ value }}</span>
+        </li>
+    </ol>
 </template>
 
 <script setup>
@@ -49,18 +49,22 @@ const style = {
 
 .list-item-container {
     cursor: pointer;
-    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .list-item-number{
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.list-item-text{
     background-color: rgba(149, 149, 149, 0.1);
     border-color: rgba(149, 149, 149, 0.3);
     border-radius: 8px;
     width: fit-content;
-    padding: 8px;
-}
-
-.list-item-text{
+    padding: 0px 8px;
     margin-left: 12px;
 }
 </style>
