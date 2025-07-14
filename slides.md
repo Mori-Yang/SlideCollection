@@ -18,7 +18,8 @@ layout: center
 Mori
 
 ---
-src: "./template/index.md"
+src: "./template/biz_talk/index.md"
 info: "作为统一入口，修改链接来展示不同的PPT。"
 style: "height:100%"
 ---
+
